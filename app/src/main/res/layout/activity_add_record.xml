@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".AddRecordActivity"
+    android:background="@color/gray_light">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_centerHorizontal="true"
+        android:fillViewport="false"
+        android:layout_alignParentTop="true" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+            <View
+                android:id="@+id/overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4D000000"
+                android:clickable="true"
+                android:visibility="gone" />
+            <!-- 巡查日期 -->
+            <LinearLayout
+                android:id="@+id/DaiMaLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_linnerlayout_border"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="巡查日期 : "
+                    android:id="@+id/巡查日期"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/XunChaShiJian"
+                    android:digits="123"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/imageView"
+                android:background="@color/gray_light"/>
+
+            <!--所属网格-->
+            <LinearLayout
+                android:id="@+id/WangGeLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_linnerlayout_border"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所属网格: "
+                    android:id="@+id/所属网格"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/SS_WangGe"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/gray_light"/>
+
+            <!--巡查员姓名-->
+            <LinearLayout
+                android:id="@+id/XingMingLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_linnerlayout_border"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="巡查员姓名: "
+                    android:id="@+id/巡查员姓名"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/WGYXinGMing"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/gray_light"/>
+
+            <!--巡查区域-->
+            <LinearLayout
+                android:id="@+id/QuYuLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_linnerlayout_border"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="巡查区域: "
+                    android:id="@+id/巡查区域"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/XunChaQuYu"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/gray_light"/>
+
+            <!-- 提交 -->
+            <Button
+                android:id="@+id/recordsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="提交记录"
+                android:background="@drawable/btn_orange_selector"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_normal"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/gray_light"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

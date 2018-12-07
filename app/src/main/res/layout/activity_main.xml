@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+    <com.baidu.mapapi.map.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bmapView"
+        android:clickable="true"/>
+
+
+    <com.ddz.floatingactionbutton.FloatingActionMenu
+        android:id="@+id/fab4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="90dp"
+        app:fab_addButton_collapsed_rotation="0"
+        app:fab_addButton_expanded_rotation="45"
+        app:fab_addButton_rotation_duration="800"
+        app:fab_labelStyle="@style/lable_style"
+        app:fab_labelsPosition="right">
+
+        <com.ddz.floatingactionbutton.FloatingActionButton
+            android:id="@+id/ShiJian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/icon_follow"
+            app:fab_size="mini"
+            app:fab_title="事件上报" />
+
+        <com.ddz.floatingactionbutton.FloatingActionButton
+            android:id="@+id/XunCha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/icon_like"
+            app:fab_size="normal"
+            app:fab_title="巡查记录" />
+    </com.ddz.floatingactionbutton.FloatingActionMenu>
+
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/getLocation"
+        android:title="获取经纬度"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/getTime"
+        android:title="获取时间"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/ShuoMing"
+        android:title="属性信息说明"
+        app:showAsAction="never"
+        />
+
+</menu>

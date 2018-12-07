@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Main2Activity"
+    tools:showIn="@layout/app_bar_main2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<WebView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/web_view"-->
+            <!--android:clickable="true"/>-->
+
+        <com.tianditu.android.maps.MapView
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.tianditu.android.maps.MapView>
+        <com.ddz.floatingactionbutton.FloatingActionMenu
+            android:id="@+id/fab4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="90dp"
+            app:fab_addButton_collapsed_rotation="0"
+            app:fab_addButton_expanded_rotation="45"
+            app:fab_addButton_rotation_duration="800"
+            app:fab_labelStyle="@style/lable_style"
+            app:fab_labelsPosition="right">
+
+            <com.ddz.floatingactionbutton.FloatingActionButton
+                android:id="@+id/ShiJian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_icon="@drawable/icon_follow"
+                app:fab_size="mini"
+                app:fab_title="事件上报" />
+
+            <com.ddz.floatingactionbutton.FloatingActionButton
+                android:id="@+id/XunCha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_icon="@drawable/icon_like"
+                app:fab_size="normal"
+                app:fab_title="巡查记录" />
+        </com.ddz.floatingactionbutton.FloatingActionMenu>
+        <!--<ImageView-->
+            <!--android:layout_width="55dp"-->
+            <!--android:layout_height="47dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:background="@color/white"-->
+            <!--android:clickable="false"/>-->
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

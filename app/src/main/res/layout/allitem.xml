@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+        <TextView
+            android:id="@+id/allfashengtime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/dp_18"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:text="发生时间"
+            />
+        <TextView
+            android:id="@+id/allshijiandidian"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/dp_18"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:text="事件地点"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/allshijianshuoming"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/dp_18"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:text="事件说明"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</LinearLayout>

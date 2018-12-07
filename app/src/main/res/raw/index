@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="天地图山东" />
+        <title>地图显示</title>
+        <script src="http://www.sdmap.gov.cn/api/olapi/js/jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src="http://www.sdmap.gov.cn/api/olapi/ol/openlayers.js"></script>
+        <link type="text/css" rel="stylesheet" href="http://www.sdmap.gov.cn/api/agsapi/javascript/js/esri/css/esri.css" />
+        <script type="text/javascript" src="http://www.sdmap.gov.cn/api/agsapi/javascript/js/init.js"></script>
+        <style type="text/css">
+body{width: 100%;height: 100%;position: absolute;margin: 0;}
+#mapDiv{height: 100%;width: 100%}
+
+#describediv {
+    line-height: 26px;
+    padding: 10px;
+    font-size: 13px;
+    background-color: #FFF;
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    background-image: url("http://www.sdmap.gov.cn/api/olapi/images/describebac.jpg");
+    border: solid 1px #808080;
+    display: block;
+    position: absolute;
+    right: 36px;
+    top: 60px;
+    width: 260px;
+    z-index: 1001;
+    overflow-y: auto;
+    -webkit-box-shadow: #4E4B4B 0px 3px 6px;
+    -moz-box-shadow: #4E4B4B 0px 3px 6px;
+    box-shadow: #4E4B4B 0px 3px 6px;
+    z-index: 1003;
+}
+#reback{position: absolute;bottom: 10px;right: 100px;z-index: 1002;}
+#reback a{background-color: #7D7D7D; padding: 10px;color: #FFF;}
+ </style>
+        <script type="text/javascript">
+
+		var map;
+		//获取位置信息
+		var longitude;
+		var latitude;
+		navigator.geolocation.getCurrentPosition(function updateLocation(position){
+			latitude = position.coords.latitude;
+			longitude = position.coords.longitude;
+			//定义地图对象
+
+			$(function () {
+				map = new OpenLayers.Map("mapDiv", {
+					allOverlays: true,
+					numZoomLevels: 19,
+					displayProjection: "EPSG:4490",
+					controls: [
+					new OpenLayers.Control.Navigation(),
+					new OpenLayers.Control.ArgParser(),
+					new OpenLayers.Control.Attribution()]
+				});
+				//加载山东线划地图
+
+				map.addLayer(new SDTDTLayer());
+
+
+				map.setCenter(new OpenLayers.LonLat(longitude, latitude), 18);
+			});
+
+
+				var lng =  longitude;
+				var lat =  latitude;
+
+
+				//定义一个点
+				var ll = new OpenLayers.LonLat(parseFloat(lng), parseFloat(lat));
+				//设置该点位中心点  缩放到该级别
+				map.setCenter(ll, 18);
+				var graphicLayer = new OpenLayers.Layer.Vector("graphicLayer", { style: OpenLayers.Util.extend({}, OpenLayers.Feature.Vector.style['default']) });
+
+				map.addLayer(graphicLayer);
+
+				var pt = new OpenLayers.Geometry.Point(lng, lat);
+				//设置样式和标签内容
+				var style = {
+					label: "▼",
+					fontSize: "40px",
+					fontColor: "#ff0000",
+					fontWeight: "bold"
+				};
+				var feature = new OpenLayers.Feature.Vector(pt, null, style);
+				graphicLayer.addFeatures([feature]);
+
+		},  function handleLocation(error){
+					//document.getElementById("errormsg").innerHTML = "错误信息：" + error.message;
+					alert("错误信息：" + error.message);
+			}
+
+		);
+
+    </script>
+    </head>
+    <body>
+        <div id="mapDiv">
+        </div>
+    </body>
+</html>

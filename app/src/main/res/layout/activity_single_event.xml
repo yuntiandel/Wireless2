@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.wireless.SingleEventActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_centerHorizontal="true"
+        android:fillViewport="false"
+        android:layout_alignParentTop="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:paddingTop="@dimen/dp_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  事件代码"
+                android:textSize="@dimen/dp_18"
+                android:textStyle="bold"
+            />
+            <TextView
+                android:id="@+id/number"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dp_16"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:paddingTop="@dimen/dp_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  事件描述"
+                android:textStyle="bold"
+                android:textSize="@dimen/dp_18"
+                />
+            <TextView
+                android:id="@+id/expression"
+                android:paddingTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_16"
+                android:textSize="@dimen/dp_16"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:paddingTop="@dimen/dp_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  地点描述"
+                android:textStyle="bold"
+                android:textSize="@dimen/dp_18"
+                />
+            <TextView
+                android:id="@+id/place"
+                android:paddingTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dp_16"
+                android:paddingLeft="@dimen/dp_16"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:paddingTop="@dimen/dp_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  经纬度"
+                android:textStyle="bold"
+                android:textSize="@dimen/dp_18"
+                />
+            <TextView
+                android:id="@+id/long_and_lati"
+                android:paddingTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_16"
+                android:textSize="@dimen/dp_16"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:paddingTop="@dimen/dp_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  上报时间"
+                android:textStyle="bold"
+                android:textSize="@dimen/dp_18"
+                />
+            <TextView
+                android:id="@+id/submit_time"
+                android:paddingTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dp_16"
+                android:paddingLeft="@dimen/dp_16"
+
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:paddingTop="@dimen/dp_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  目标管理标准"
+                android:textStyle="bold"
+                android:textSize="@dimen/dp_18"
+                />
+            <TextView
+                android:id="@+id/standard"
+                android:paddingTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dp_16"
+                android:paddingLeft="@dimen/dp_16"
+
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:paddingTop="@dimen/dp_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  问题整改期限"
+                android:textStyle="bold"
+                android:textSize="@dimen/dp_18"
+                />
+            <TextView
+                android:id="@+id/deadline"
+                android:paddingTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dp_16"
+                android:paddingLeft="@dimen/dp_16"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:paddingTop="@dimen/dp_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  备注"
+                android:textStyle="bold"
+                android:textSize="@dimen/dp_18"
+                />
+            <TextView
+                android:id="@+id/note"
+                android:paddingTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_16"
+
+                android:textSize="@dimen/dp_16"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:paddingTop="@dimen/dp_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  图片"
+                android:textStyle="bold"
+                android:textSize="@dimen/dp_18"
+                />
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/white"/>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

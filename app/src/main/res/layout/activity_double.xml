@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <WebView
+        android:id="@+id/web_view2"
+        android:layout_width="match_parent"
+        android:layout_height="500px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--发生时间-->
+        <TextView
+            android:id="@+id/timedou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发生时间：" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20px" />
+
+        <!--地点描述-->
+        <TextView
+            android:id="@+id/didiandou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="地点描述：" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20px" />
+
+        <!--事件描述-->
+        <TextView
+            android:id="@+id/shuomingdou"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:maxLines="7"
+            android:minLines="4"
+            android:text="事件描述：" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20px" />
+
+        <!--上报部门-->
+        <TextView
+            android:id="@+id/deptmentdou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="上报部门：" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20px" />
+
+        <!--事件小类-->
+        <TextView
+            android:id="@+id/shijianxiaoleidou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="小类类型：" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20px" />
+
+        <!--处理状态-->
+        <TextView
+            android:id="@+id/chuzhizhuangtaidou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="处置过程：" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20px" />
+
+        <!--处置结果-->
+        <TextView
+            android:id="@+id/chuzhijieguodou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="处置结果：" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20px" />
+
+        <!--群众意见-->
+        <TextView
+            android:id="@+id/qunzhongyijiandou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="群众意见：" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20px" />
+
+        <!--跟进措施-->
+        <TextView
+            android:id="@+id/genjincuoshidou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="跟进措施：" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20px" />
+
+        <!--备注-->
+        <TextView
+            android:id="@+id/beizhudou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="备注：" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20px" />
+
+        <!--图片-->
+        <ImageView
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/third"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/forth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/fifth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/sixth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/seventh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/eighth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/ninth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
